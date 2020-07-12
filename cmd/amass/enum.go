@@ -161,7 +161,7 @@ func runEnumCommand(clArgs []string) {
 	rLog, wLog := io.Pipe()
 	// Setup logging so that messages can be written to the file and used by the program
 	cfg.Log = log.New(wLog, "", log.Lmicroseconds)
-	logfile := filepath.Join(config.OutputDirectory(cfg.Dir), "amass.log")
+	logfile := filepath.Join(config.OutputDirectory(cfg.Dir), "CCCCCCCC.log")
 	if args.Filepaths.LogFile != "" {
 		logfile = args.Filepaths.LogFile
 	}
@@ -380,7 +380,7 @@ func saveTextOutput(e *enum.Enumeration, args *enumArgs, output chan *requests.O
 	defer wg.Done()
 
 	dir := config.OutputDirectory(e.Config.Dir)
-	txtfile := filepath.Join(dir, "amass.txt")
+	txtfile := filepath.Join(dir, "XSSS.txt")
 	if args.Filepaths.TermOut != "" {
 		txtfile = args.Filepaths.TermOut
 	}
@@ -425,7 +425,7 @@ func saveJSONOutput(e *enum.Enumeration, args *enumArgs, output chan *requests.O
 	defer wg.Done()
 
 	dir := config.OutputDirectory(e.Config.Dir)
-	jsonfile := filepath.Join(dir, "amass.json")
+	jsonfile := filepath.Join(dir, "ASDasd.json")
 	if args.Filepaths.JSONOutput != "" {
 		jsonfile = args.Filepaths.JSONOutput
 	}
